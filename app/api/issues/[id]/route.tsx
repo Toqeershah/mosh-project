@@ -1,7 +1,6 @@
 import AuthOptions from "@/app/auth/AuthOptions";
 import { patchIssueSchema } from "@/app/validationSchema";
 import prisma from "@/prisma/client";
-import { error } from "console";
 import { getServerSession } from "next-auth";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -38,7 +37,7 @@ export async function PATCH(
     data: {
       title,
       description,
-      assignedToUserId,
+      // assignedToUserId
     },
   });
 
